@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-blue-950;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ::-webkit-scrollbar-track {
+  @apply bg-blue-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+} */
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Section animations */
+[data-animate="true"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animate="true"].animate-fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}

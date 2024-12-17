@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
               <GitHub className="mr-2" size={20} />
               Code
             </a>
-            <a
+            {live && <a
               href={live}
               className="flex items-center text-gray-300 hover:text-blue-400"
               target="_blank"
@@ -66,7 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
             >
               <ExternalLink className="mr-2" size={20} />
               Live Demo
-            </a>
+            </a>}
           </div>
         </div>
       </div>

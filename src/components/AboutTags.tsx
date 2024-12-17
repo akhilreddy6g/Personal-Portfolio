@@ -49,7 +49,7 @@ const AboutTags = () => {
               <button
                 key={tag.id}
                 onClick={() => setSelectedTag(tag)}
-                className="px-4 py-2 bg-white rounded-full text-gray-800 hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg shadow-[0px_0px_0px_0.4px_rgba(250,200,146,0.4)]"
+                className="px-4 py-2 bg-white rounded-full text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:shadow-lg shadow-[0px_0px_0px_0.4px_rgba(250,200,146,0.4)]"
               >
                 {tag.label}
               </button>

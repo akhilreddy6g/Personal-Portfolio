@@ -22,20 +22,32 @@ const Hero = () => {
                 Akhil
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 text-justify">A passionate software developer specializing in full-stack development, AI, and ML. I thrive on transforming ideas into impactful products, particularly those that require teamwork and collaboration. Apart from breaking down complex challenges into manageable, actionable tasks and seamlessly integrating them into practical, effective solutions, I enjoy bringing people’s visions to life on screen</p>
+            <p className="text-xl text-gray-300 mb-8 text-justify">A passionate software developer specializing in full-stack development, AI, and ML. <span className='hidden sm:inline'>I thrive on transforming ideas into impactful products, particularly those that require teamwork and collaboration. Apart from breaking down complex challenges into manageable, actionable tasks and seamlessly integrating them into practical, effective solutions, I enjoy bringing people’s visions to life on screen</span></p>
             <div className="flex justify-center md:justify-start space-x-6">
               <SocialLink href="https://github.com/akhilreddy6g" icon={<FaGithub size={32} color="#4078c0" />} />
               <SocialLink
                 href="https://www.linkedin.com/in/akhil-reddy-gaddam/"
                 icon={<FaLinkedin size={32} color="#0077b5" />}
               />
+              <SocialLink 
+                href="https://leetcode.com/u/akgaddam/" 
+                icon={
+                  <div className="flex items-center justify-center w-8 h-8">
+                    <img 
+                      src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+                      alt="LeetCode" 
+                      className="w-full h-full object-contain" 
+                    />
+                  </div>
+                } 
+              />
+              <SocialLink href="mailto:akhilreddyoff21@gmail.com" icon={<FaEnvelope size={32} color="#d14836" />} />
+              <SocialLink href="tel:+13527098669" icon={<FaPhoneAlt size={32} color="#34a853" />} />
               <SocialLink href="https://x.com/kil0006?s=21&t=A-5W6FL_V7lqe6fLcotK6A" icon={<SiX size={32} color="#000000" />} />
               <SocialLink
                 href="https://www.instagram.com/akhi1_reddy/"
                 icon={<FaInstagram size={32} color="#e1306c" />}
               />
-              <SocialLink href="mailto:akhilreddyoff21@gmail.com" icon={<FaEnvelope size={32} color="#d14836" />} />
-              <SocialLink href="tel:+13527098669" icon={<FaPhoneAlt size={32} color="#34a853" />} />
             </div>
           </div>
         </div>

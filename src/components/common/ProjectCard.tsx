@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-        <p className="text-gray-300 mb-4">{description}</p>
+        <p className="text-gray-300 mb-4 text-justify">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.slice(0, 3).map((tech) => (
             <span

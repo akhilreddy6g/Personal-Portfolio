@@ -3,16 +3,16 @@ import { Menu, X } from './icons';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = ['About', 'Projects', 'Skills', 'Experience', 'Education', 'More', 'Contact'];
+  const menuItems = ['About', 'Projects', 'Skills', 'Achievements', 'Experience', 'Education', 'More', 'Contact'];
   return (
     <header className="fixed w-full backdrop-blur-xl z-50 shadow-[0px_0.4px_0px_0px_rgba(250,200,146,0.4)]">
       <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <h1 className="text-2xl font-bold bg-white bg-clip-text text-transparent">
             Akhil Reddy Gaddam
           </h1>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8">
             {menuItems.map((item) => (
               <a
                 key={item}
@@ -25,7 +25,7 @@ const Header = () => {
           </div>
 
           <button
-            className="md:hidden text-gray-300"
+            className="lg:hidden text-gray-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4">
+          <div className="lg:hidden mt-4 space-y-4">
             {menuItems.map((item) => (
               <a
                 key={item}

@@ -184,7 +184,7 @@ const Projects: React.FC = () => {
           Featured Projects
         </h2>
 
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center gap-4 mb-8 flex-wrap">
           {categories.map(category => (
             <button
               key={category.id}

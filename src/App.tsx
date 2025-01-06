@@ -13,6 +13,18 @@ import { setupScrollAnimations } from './utils/animations';
 function App() {
   useEffect(() => {
     setupScrollAnimations();
+    async function fetchInstituitionData(){
+      await fetch(import.meta.env.VITE_API_URL, {method: "POST"})
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.info(error)
+    })}
+    fetchInstituitionData();
   }, []);
 
   return (

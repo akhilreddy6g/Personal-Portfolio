@@ -17,7 +17,7 @@ const Skills = () => {
     'Backend': [
       { name: 'Node.js', proficiency: 65, projectQuota: 60, icon: <FaNodeJs color="#8CC84B" /> },
       { name: 'Python', proficiency: 85, projectQuota: 75, icon: <FaPython color="#FFD43B" /> },
-      { name: 'Golang', proficiency: 58, projectQuota: 55, icon: <SiGoland color="#00ADD8" /> }
+      { name: 'Golang', proficiency: 58, projectQuota: 20, icon: <SiGoland color="#00ADD8" /> }
     ],
     'Database': [
       { name: 'MongoDB', proficiency: 60, projectQuota: 45, icon: <SiMongodb color="#47A248" /> },

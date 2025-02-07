@@ -41,7 +41,7 @@ function App() {
         <Contact />
       </main>
       <footer className="py-6 text-center text-gray-400">
-        <p>© 2024 Akhil Reddy Gaddam. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Akhil Reddy Gaddam. All rights reserved.</p>
       </footer>
     </div>
   );

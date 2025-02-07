@@ -9,7 +9,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between gap-2">
           <h1 className="text-2xl font-bold bg-white bg-clip-text text-transparent">
-            Akhil Reddy Gaddam
+            <a href="https://akhil-reddy-gaddam.onrender.com/">Akhil Reddy Gaddam</a>
           </h1>
           
           <div className="hidden lg:flex space-x-8">

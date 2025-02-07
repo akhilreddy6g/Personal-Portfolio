@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
       title: 'Workspace',
       description: 'Your personal time management assistant that ensures work accomplishment with accountability and responsibility',
       image: './images/space1.jpg',
-      technologies: ['Node.js', 'Express.js', 'React', 'PostgreSQL'],
+      technologies: ['Javascript', 'Node.js', 'Express.js', 'React', 'PostgreSQL'],
       github: 'https://github.com/akhilreddy6g/Workspace',
       live: 'https://workspace-eikp.onrender.com/',
       metrics: {
@@ -41,6 +41,29 @@ const Projects: React.FC = () => {
         'Reducing and Optimizing frequent API calls',
         'Standard Authentication and Maintaining Persistent Sessions for Continued Activity',
         'Data Encryption, for Enhanced Privacy'
+      ],
+      category: 'fullstack'
+    },
+    {
+      title: 'Eventseasy',
+      description: 'A one-stop platform to host, attend, and manage ceremonies—from invitations to live updates—ensuring a seamless, delightful, and memorable experience',
+      image: './images/ceremony.jpg',
+      technologies: ['Typescript', 'Next.js', 'Nest.js', 'React', 'MongoDB', 'Tailwind', 'ShadcnUI'],
+      github: 'https://github.com/akhilreddy6g/Eventseasy',
+      live: '',
+      metrics: {
+        microservices: '6',
+        support: '50+ Events',
+      },
+      timeline: [
+        { date: 'Dec 2024', milestone: 'Project Initiation, Tech Stack Preferences and Application Prototyping' },
+        { date: 'Jan 2025', milestone: 'Application desgin, testing and simulation' },
+        { date: 'Feb 2025', milestone: 'Deployment in Progress' }
+      ],
+      challenges: [
+        'Database Design and Optimization',
+        'Access Based Control Reinforcement',
+        'Live updates and Notifications'
       ],
       category: 'fullstack'
     },
@@ -69,6 +92,29 @@ const Projects: React.FC = () => {
       category: 'frontend'
     },
     {
+      title: 'Scholar Ops',
+      description: 'An education management system with features like timetables, attendance tracking, and grade reports, ensuring seamless student-teacher interaction.',
+      image: './images/scholarops.jpg',
+      technologies: ['Django', 'HTML', 'CSS'],
+      github: 'https://github.com/akhilreddy6g/Scholar-Ops',
+      live: '',
+      metrics: {
+        'api requests per user': '2k+',
+      },
+      timeline: [
+        { date: 'Jun 2023', milestone: 'Project Initiation and Design' },
+        { date: 'Jul 2023', milestone: 'Role based access control Initiation, and Authentication'},
+        { date: 'Aug 2023', milestone: 'Api development'},
+        { date: 'Sep 2023', milestone: 'Application testing' }
+      ],
+      challenges: [
+        'Enforcing Access Control and Restricting Unauthorized Privileges',
+        'Managing a Component-Free, Page-Driven UI',
+        'Ensuring Reliable and Consistent Updates'
+      ],
+      category: 'fullstack'
+    },
+    {
       title: 'Car Model Acquisition',
       description: 'Developed a Decision tree model to predict the optimal pre-owned cars for purchase and resale based on specifications like seats, engine condition, maintenance, etc.',
       image: './images/car.jpg',
@@ -82,7 +128,7 @@ const Projects: React.FC = () => {
       },
       timeline: [
         { date: 'May 2021', milestone: 'Project Initiation' },
-        { date: 'June 2021', milestone: 'Data preprocessing, Model Exploration, Training, and Testing' }
+        { date: 'Jun 2021', milestone: 'Data preprocessing, Model Exploration, Training, and Testing' }
       ],
       challenges: [
         'Handling Missing Data',
@@ -105,7 +151,7 @@ const Projects: React.FC = () => {
       },
       timeline: [
         { date: 'May 2024', milestone: 'Project Initiation' },
-        { date: 'June 2024', milestone: 'Data preprocessing, Stratified Sampling, Model Exploration, Training, and Testing' },
+        { date: 'Jun 2024', milestone: 'Data preprocessing, Stratified Sampling, Model Exploration, Training, and Testing' },
       ],
       challenges: [
         'Generalizing Images to a Common Size',
@@ -128,8 +174,8 @@ const Projects: React.FC = () => {
       },
       timeline: [
         { date: 'Feb 2024', milestone: 'Design 3D Flower Model' },
-        { date: 'March 2024', milestone: 'Establish Pipeline' },
-        { date: 'April 2024', milestone: 'Integrate everything and Employ it for use' }
+        { date: 'Mar 2024', milestone: 'Establish Pipeline' },
+        { date: 'Apr 2024', milestone: 'Integrate everything and Employ it for use' }
       ],
       challenges: [
         'Designing the 3D Model',
@@ -151,9 +197,9 @@ const Projects: React.FC = () => {
         'Precision': '98%'
       },
       timeline: [
-        { date: 'March 2022', milestone: 'Project Initiation and Data Collection' },
+        { date: 'Mar 2022', milestone: 'Project Initiation and Data Collection' },
         { date: 'May 2022', milestone: 'Establish pipeline, Model Exploration, Training, and Testing' },
-        { date: 'July 2022', milestone: 'Model Optimization and Reinforcement Learning' }
+        { date: 'Jul 2022', milestone: 'Model Optimization and Reinforcement Learning' }
       ],
       challenges: [
         'Handling Signs with Light Reflection/ Distorted Signs',
@@ -168,7 +214,6 @@ const Projects: React.FC = () => {
     { id: 'all', label: 'All' },
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'frontend', label: 'Frontend' },
-    // { id: 'api', label: 'API Integration' },
     { id: 'deeplearning', label: 'Deep Learning'},
     { id: 'machinelearning', label: 'Machine Learning'}
   ];

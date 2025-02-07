@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="mr-2" size={20} />
-              Live Demo
+              Website
             </a>}
           </div>
         </div>

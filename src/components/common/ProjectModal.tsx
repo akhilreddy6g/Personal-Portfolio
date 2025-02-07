@@ -87,7 +87,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
           {/* Challenges */}
           <div>
-            <h4 className="text-xl font-semibold text-blue-400 mb-4">Challenges & Solutions</h4>
+            <h4 className="text-xl font-semibold text-blue-400 mb-4">Challenges</h4>
             <div className="space-y-4">
               {project.challenges.map((challenge, index) => (
                 <div

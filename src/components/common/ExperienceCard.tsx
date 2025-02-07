@@ -4,6 +4,7 @@ import { Calendar } from '../icons';
 interface ExperienceCardProps {
   role: string;
   company: string;
+  website: string;
   period: string;
   description: string;
 }
@@ -11,6 +12,7 @@ interface ExperienceCardProps {
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
   role,
   company,
+  website,
   period,
   description,
 }) => (
@@ -22,7 +24,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         {period}
       </div>
     </div>
-    <div className="text-lg text-blue-300 mb-2">{company}</div>
+    <div className="text-lg text-blue-300 mb-2"><a href={website} target="_blank">{company}</a></div>
     <p className="text-gray-300 text-justify">{description}</p>
   </div>
 );

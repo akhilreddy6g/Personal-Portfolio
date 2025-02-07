@@ -22,7 +22,7 @@ const Hero = () => {
                 Akhil
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 text-justify">A passionate software developer specializing in full-stack development, AI, and ML. <span className='hidden sm:inline'>I thrive on transforming ideas into impactful products, particularly those that require teamwork and collaboration. Apart from breaking down complex challenges into manageable, actionable tasks and seamlessly integrating them into practical, effective solutions, I enjoy bringing people’s visions to life on screen</span></p>
+            <p className="text-xl text-gray-300 mb-8 text-justify">A passionate software developer specializing in full-stack development. <span className='hidden sm:inline'>I thrive on transforming ideas into impactful products, particularly those that require teamwork and collaboration. Apart from breaking down complex challenges into manageable, actionable tasks and seamlessly integrating them into practical, effective solutions, I enjoy bringing people’s visions to life on screen</span></p>
             <div className="flex justify-center md:justify-start space-x-6">
               <SocialLink href="https://github.com/akhilreddy6g" icon={<FaGithub size={32} color="#4078c0" />} />
               <SocialLink

@@ -14,7 +14,7 @@ const AboutTags = () => {
     {
       id: 'problem_solver',
       label: '🧩 Problem Solver',
-      description: 'Passionate about tackling complex challenges with efficient solutions. Solved 330+ coding problems on platforms like LeetCode, honing my skills in algorithms and data structures to optimize application performance.'
+      description: 'Passionate about tackling complex challenges with efficient solutions. Solved 350+ coding problems on platforms like LeetCode, honing my skills in algorithms and data structures to optimize application performance.'
     },
     {
       id: 'team_collaborator',

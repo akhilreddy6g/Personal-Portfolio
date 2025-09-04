@@ -21,6 +21,29 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: 'Eventseasy',
+      description: 'A one-stop platform to host, attend, and manage ceremonies—from invitations to live updates—ensuring a seamless, delightful, and memorable experience',
+      image: './images/ceremony.jpg',
+      technologies: ['Typescript', 'Next.js', 'Nest.js', 'React', 'MongoDB', 'Kafka', 'Redis', 'Tailwind', 'ShadcnUI'],
+      github: 'https://github.com/akhilreddy6g/Eventseasy',
+      live: 'https://eventseasy.onrender.com/',
+      metrics: {
+        microservices: '6',
+        support: '50+ Events',
+      },
+      timeline: [
+        { date: 'Dec 2024', milestone: 'Project Initiation, Tech Stack Preferences and Application Prototyping' },
+        { date: 'Jan 2025', milestone: 'Database Schema Design, Frontend and Backend Development' },
+        { date: 'June 2025', milestone: 'Deployment and Website Launch' }
+      ],
+      challenges: [
+        'Database Design and Optimization',
+        'Distributed Live Chat System',
+        'Live updates and Notifications'
+      ],
+      category: 'fullstack'
+    },
+    {
       title: 'Workspace',
       description: 'Your personal time management assistant that ensures work accomplishment with accountability and responsibility',
       image: './images/space1.jpg',
@@ -41,29 +64,6 @@ const Projects: React.FC = () => {
         'Reducing and Optimizing frequent API calls',
         'Standard Authentication and Maintaining Persistent Sessions for Continued Activity',
         'Data Encryption, for Enhanced Privacy'
-      ],
-      category: 'fullstack'
-    },
-    {
-      title: 'Eventseasy',
-      description: 'A one-stop platform to host, attend, and manage ceremonies—from invitations to live updates—ensuring a seamless, delightful, and memorable experience',
-      image: './images/ceremony.jpg',
-      technologies: ['Typescript', 'Next.js', 'Nest.js', 'React', 'MongoDB', 'Tailwind', 'ShadcnUI'],
-      github: 'https://github.com/akhilreddy6g/Eventseasy',
-      live: '',
-      metrics: {
-        microservices: '6',
-        support: '50+ Events',
-      },
-      timeline: [
-        { date: 'Dec 2024', milestone: 'Project Initiation, Tech Stack Preferences and Application Prototyping' },
-        { date: 'Jan 2025', milestone: 'Application desgin, testing and simulation' },
-        { date: 'Feb 2025', milestone: 'Deployment in Progress' }
-      ],
-      challenges: [
-        'Database Design and Optimization',
-        'Access Based Control Reinforcement',
-        'Live updates and Notifications'
       ],
       category: 'fullstack'
     },

@@ -7,14 +7,14 @@ const Experience = () => {
       company: 'University of Florida',
       website: 'https://rcrec-ona.ifas.ufl.edu/',
       period: 'May 2025 - Present',
-      description: 'Developed a decision support system application that helps visualize and analyze nitrate pollution in agricultural regions within the United States. The platform lets users draw custom areas on an interactive map and instantly retrieve nitrate concentration data from nearby monitoring stations. Built with Next.js, React.js, ShadcnUI, Tailwind CSS, Leaflet, Flask, and PostgreSQL with PostGIS, the tool streamlines complex environmental data into actionable insights, significantly improving accessibility for researchers and policymakers, enabling data-driven decisions for sustainable land and water management.',
+      description: 'As a software engineer, I developed end-to-end, large-scale data systems on HPC infrastructure and designed distributed pipelines that processed over two decades of spatiotemporal data, and then paired them with deterministic PyTorch training to significantly cut model training and evaluation time by 60%. At the same time, I also built a geospatial decision-support platform using Next.js, FastAPI, and PostGIS, making complex environmental data from over 90 monitoring stations intuitive to explore. By optimizing GeoTIFFs and introducing cloud-native storage, I improved system responsiveness and engagement while collaborating closely with hydrologists to ship production-ready features in an agile environment.',
     },
     {
       role: 'Full Stack Engineer Intern',
       company: 'The Commons XR',
       website: 'https://thecommonsxr.com/',
       period: 'Jan 2025 - May 2025',
-      description: 'Optimized access control by enhancing granularity and reducing unauthorized access incidents by 30%, while deploying and optimizing API endpoints on GCP Cloud Run for scalable, secure, and serverless execution. Streamlined data flow across components using React hooks, improved core editor functionality, and resolved critical UI rendering issues in an agile environment, eliminating false loading states and achieving 0% data redundancy. Developed an SMTP email alert system for critical error escalation, reducing issue reports by 10%, while designing, testing, and deploying features through iterative SDLC processes in an agile environment.',
+      description: 'As a full-stack engineer intern, I focused on reliability, performance, and clean design, which led me to automating backend service recovery, reducing the VM downtime drastically. Apart from that, I also built a secure email alerting system to catch client side errors, reducing service interruptions by 10%. In parallel, I optimized REST APIs on cloud infrastructure to improve latency under real traffic. On the frontend, I streamlined data flow across 50+ React components, fixing duplication issues and stabilizing pagination. I also introduced robust testing across multiple layers, ensuring features shipped confidently within agile sprints and contributed to a more scalable, dependable product overall.',
     },
     // {
     //   role: 'ML Engineer Intern',

@@ -19,7 +19,7 @@ const Education = () => {
       school: "University of Florida",
       degree: "MS",
       major: "Computer Science",
-      period: "Jan 2023 - Jan 2025",
+      period: "Jan 2023 - Dec 2024",
       courses: [
         { name: "Analysis of Algorithms", description: "Studied advanced algorithms on graphs, trees, explored dynamic programming, p and np problems, including time and space complexity analysis, optimization techniques, and their real-world applications in problem-solving." },
         { name: "Advanced Data Structures", description: "Gained expertise in advanced data structures such as Red Black Trees, B-trees, AVL Trees, Tries, N-ary Trees, focusing on their design, implementation, and application in optimizing data processing." },

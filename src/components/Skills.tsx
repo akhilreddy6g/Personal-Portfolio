@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import SkillBar from './common/SkillBar';
-import { FaReact, FaNodeJs, FaPython, FaGit, FaDatabase } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiPostman, SiMongodb, SiPostgresql, SiRedis, SiGoland } from 'react-icons/si';
-import { MdOutlineSecurity } from 'react-icons/md';
+import { FaReact, FaNodeJs, FaPython, FaGit, FaDatabase, FaJava, FaAws, FaLinux } from 'react-icons/fa';
+import { SiNextdotjs, SiTailwindcss, SiPostman, SiMongodb, SiPostgresql, SiRedis, SiGoland, SiTerraform, SiDocker, SiTypescript, SiMysql, SiGooglecloud, SiGithubactions, SiJest, SiCypress, SiJunit5, SiJirasoftware } from 'react-icons/si';
+import { MdGroups } from 'react-icons/md';
 import { BsPuzzle, BsChatText } from 'react-icons/bs';
 
 const Skills = () => {
@@ -10,29 +10,46 @@ const Skills = () => {
 
   const skillCategories = {
     'Frontend': [
-      { name: 'React', proficiency: 68, projectQuota: 63, icon: <FaReact color="#61DBFB" /> },
-      { name: 'Next.js', proficiency: 63, projectQuota: 57, icon: <SiNextdotjs color="#000000" /> },
-      { name: 'CSS/Tailwind', proficiency: 75, projectQuota: 72, icon: <SiTailwindcss color="#38BDF8" /> }
+      { name: 'React', proficiency: 68, projectQuota: 75, icon: <FaReact color="#61DBFB" /> },
+      { name: 'Next.js', proficiency: 63, projectQuota: 65, icon: <SiNextdotjs color="#000000" /> },
+      { name: 'Javascript / TypeScript', proficiency: 65, projectQuota: 70, icon: <SiTypescript color="#3178C6" /> },
+      { name: 'Tailwind/CSS', proficiency: 60, projectQuota: 60, icon: <SiTailwindcss color="#38BDF8" /> }
     ],
     'Backend': [
-      { name: 'Node.js', proficiency: 65, projectQuota: 60, icon: <FaNodeJs color="#8CC84B" /> },
-      { name: 'Python', proficiency: 85, projectQuota: 75, icon: <FaPython color="#FFD43B" /> },
-      { name: 'Golang', proficiency: 58, projectQuota: 20, icon: <SiGoland color="#00ADD8" /> }
+      { name: 'Java/Spring Boot', proficiency: 65, projectQuota: 55, icon: <FaJava color="#007396" /> },
+      { name: 'Python / FastAPI / Flask', proficiency: 80, projectQuota: 70, icon: <FaPython color="#FFD43B" /> },
+      { name: 'Node.js / Express / Nest', proficiency: 62, projectQuota: 60, icon: <FaNodeJs color="#8CC84B" /> },
+      { name: 'Golang', proficiency: 55, projectQuota: 37, icon: <SiGoland color="#00ADD8" /> }
     ],
     'Database': [
-      { name: 'MongoDB', proficiency: 60, projectQuota: 45, icon: <SiMongodb color="#47A248" /> },
-      { name: 'PostgreSQL', proficiency: 70, projectQuota: 70, icon: <SiPostgresql color="#336791" /> },
-      { name: 'Redis', proficiency: 50, projectQuota: 20, icon: <SiRedis color="#D82C20" /> }
+      { name: 'PostgreSQL', proficiency: 67, projectQuota: 72, icon: <SiPostgresql color="#336791" /> },
+      { name: 'MongoDB', proficiency: 62, projectQuota: 65, icon: <SiMongodb color="#47A248" /> },
+      { name: 'Redis', proficiency: 55, projectQuota: 40, icon: <SiRedis color="#D82C20" /> },
+      { name: 'MySQL', proficiency: 45, projectQuota: 25, icon: <SiMysql color="#4479A1" /> }
+    ],
+    'Cloud & DevOps': [
+      { name: 'AWS', proficiency: 62, projectQuota: 60, icon: <FaAws color="#FF9900" /> },
+      { name: 'GCP', proficiency: 55, projectQuota: 50, icon: <SiGooglecloud color="#4285F4" /> },
+      { name: 'Docker', proficiency: 63, projectQuota: 68, icon: <SiDocker color="#2496ED" /> },
+      { name: 'Terraform', proficiency: 57, projectQuota: 48, icon: <SiTerraform color="#7B42BC" /> }
+    ],
+    'CI/CD & Testing': [
+      { name: 'GitHub Actions', proficiency: 62, projectQuota: 68, icon: <SiGithubactions color="#2088FF" /> },
+      { name: 'Jest', proficiency: 58, projectQuota: 55, icon: <SiJest color="#C21325" /> },
+      { name: 'Cypress', proficiency: 52, projectQuota: 57, icon: <SiCypress color="black" /> },
+      { name: 'JUnit', proficiency: 55, projectQuota: 40, icon: <SiJunit5 color="#25A162" /> }
     ],
     'Tools': [
-      { name: 'Git', proficiency: 65, projectQuota: 60, icon: <FaGit color="#F05032" /> },
-      { name: 'Postman', proficiency: 70, projectQuota: 68, icon: <SiPostman color="#FF6C37" /> },
-      { name: 'PgAdmin/ MongoDB Compass', proficiency: 75, projectQuota: 64, icon: <FaDatabase color="#0064A5" /> }
+      { name: 'Git', proficiency: 75, projectQuota: 75, icon: <FaGit color="#F05032" /> },
+      { name: 'Postman', proficiency: 62, projectQuota: 60, icon: <SiPostman color="#FF6C37" /> },
+      { name: 'Linux', proficiency: 60, projectQuota: 65, icon: <FaLinux color="#FCC624" /> },
+      { name: 'PgAdmin/Compass', proficiency: 58, projectQuota: 55, icon: <FaDatabase color="#0064A5" /> }
     ],
     'Soft Skills': [
-      { name: 'Team Leadership', proficiency: 70, projectQuota: 65, icon: <MdOutlineSecurity color="#FFD700" /> },
-      { name: 'Problem Solving', proficiency: 85, projectQuota: 80, icon: <BsPuzzle color="#4CAF50" /> },
-      { name: 'Communication', proficiency: 80, projectQuota: 80, icon: <BsChatText color="#2196F3" /> }
+      { name: 'Cross-team Collaboration', proficiency: 70, projectQuota: 75, icon: <MdGroups color="#FF7043" /> },
+      { name: 'Problem Solving', proficiency: 68, projectQuota: 72, icon: <BsPuzzle color="#4CAF50" /> },
+      { name: 'Communication', proficiency: 75, projectQuota: 70, icon: <BsChatText color="#2196F3" /> },
+      { name: 'Agile/SDLC', proficiency: 80, projectQuota: 85, icon: <SiJirasoftware color="#0052CC" /> }
     ]
   };
 
@@ -61,7 +78,7 @@ const Skills = () => {
               }`}
               onClick={() => setViewMode('projectQuota')}
             >
-              In Projects
+              Projects/Experience
             </button>
           </div>
         </div>

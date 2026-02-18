@@ -32,11 +32,11 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Experience />
+        <Education />
         <Projects />
         <Skills />
         <Achievements />
-        <Experience />
-        <Education />
         <AboutTags />
         <Contact />
       </main>

@@ -22,7 +22,7 @@ const Hero = () => {
                 Akhil
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 text-justify">A passionate software developer specializing in full-stack development. <span className='hidden sm:inline'>I thrive on transforming ideas into impactful products, particularly those that require teamwork and collaboration. Apart from breaking down complex challenges into manageable, actionable tasks and seamlessly integrating them into practical, effective solutions, I enjoy bringing people’s visions to life on screen</span></p>
+            <p className="text-xl text-gray-300 mb-8 text-justify">A software engineer who builds fast, scalable, real-time systems end-to-end. <span className='hidden sm:inline'>Right now, I'm at the University of Florida building a geospatial web platform with React, TypeScript, Next.js, Spring Boot, and AWS — serving researchers who can't afford downtime. I've shipped real-time messaging with Kafka and WebSockets, built async ML pipelines with FastAPI, and deployed infrastructure with Terraform and Docker. </span> I work across the stack — React to Spring Boot to Go — and I care about code that performs under pressure. <span className='hidden sm:inline'>MS in Computer Science from UF, based in Florida, open to relocation.</span></p>
             <div className="flex justify-center md:justify-start space-x-6">
               <SocialLink href="https://github.com/akhilreddy6g" icon={<FaGithub size={32} color="#4078c0" />} />
               <SocialLink

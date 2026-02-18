@@ -3,7 +3,7 @@ import { Menu, X } from './icons';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = ['About', 'Projects', 'Skills', 'Achievements', 'Experience', 'Education', 'More', 'Contact'];
+  const menuItems = ['About', 'Experience', 'Education', 'Projects', 'Skills', 'Achievements', 'More', 'Contact'];
   return (
     <header className="fixed w-full backdrop-blur-xl z-50 shadow-[0px_0.4px_0px_0px_rgba(250,200,146,0.4)]">
       <nav className="container mx-auto px-6 py-4">

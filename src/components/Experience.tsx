@@ -3,18 +3,18 @@ import ExperienceCard from './common/ExperienceCard';
 const Experience = () => {
   const experiences = [
     {
-      role: 'Software Developer',
+      role: 'Software Engineer',
       company: 'University of Florida',
       website: 'https://rcrec-ona.ifas.ufl.edu/',
       period: 'May 2025 - Present',
-      description: 'As a software engineer, I developed end-to-end, large-scale data systems on HPC infrastructure and designed distributed pipelines that processed over two decades of spatiotemporal data, and then paired them with deterministic PyTorch training to significantly cut model training and evaluation time by 60%. At the same time, I also built a geospatial decision-support platform using Next.js, FastAPI, and PostGIS, making complex environmental data from over 90 monitoring stations intuitive to explore. By optimizing GeoTIFFs and introducing cloud-native storage, I improved system responsiveness and engagement while collaborating closely with hydrologists to ship production-ready features in an agile environment.',
+      description: 'As a software engineer, I built a geospatial web platform that researchers depended on daily to access, monitor, and download multidimensional environmental data using React, TypeScript, and Next.js on The frontend, and Java Spring Boot microservices with PostgreSQL, Redis, and OAuth2 on the backend — containerized with Docker and deployed on AWS using Terraform across ECS, RDS, and S3. Beyond the core platform, I built async ML simulation pipelines with Python FastAPI and Celery, cutting user wait times by 20%. Monitoring was handled through Prometheus and Grafana, alongside an LLM framework I developed that translated domain expert requirements into technical specs. All of this happened in close collaboration with hydrologists and biologists — translating their research needs into production-grade software.',
     },
     {
-      role: 'Full Stack Engineer Intern',
-      company: 'The Commons XR',
+      role: 'Full Stack Intern',
+      company: 'Commons XR',
       website: 'https://thecommonsxr.com/',
       period: 'Jan 2025 - May 2025',
-      description: 'As a full-stack engineer intern, I focused on reliability, performance, and clean design, which led me to automating backend service recovery, reducing the VM downtime drastically. Apart from that, I also built a secure email alerting system to catch client side errors, reducing service interruptions by 10%. In parallel, I optimized REST APIs on cloud infrastructure to improve latency under real traffic. On the frontend, I streamlined data flow across 50+ React components, fixing duplication issues and stabilizing pagination. I also introduced robust testing across multiple layers, ensuring features shipped confidently within agile sprints and contributed to a more scalable, dependable product overall.',
+      description: 'As a full-stack intern, I shipped production features across the full stack in a fast-moving Agile environment. My biggest deliverable was a secure email alert system built with React, Python, and SQL that reduced service interruptions by 10%. I also automated multi-server startup using cross-platform Bash scripting, cutting VM recovery time from five minutes to one. On the DevOps side, I standardized CI/CD deployments on GCP with Docker and GitHub Actions, and wrote unit, integration, and end-to-end tests with Mocha and Cypress. Apart from that, I also collaborated closely with Unity developers to troubleshoot desktop rendering issues using .NET/C#, and established data contracts and API specs across cross-functional teams.',
     },
     // {
     //   role: 'ML Engineer Intern',
